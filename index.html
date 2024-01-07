@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="https://cdn-icons-png.flaticon.com/128/732/732084.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">What's new</a></li>
+                 <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Shoes It's <span>NIKE</span></h2>
+                <p>Highest quality sneakers</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="shoe1.png" class="NikeShoe">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="shoe1.png" onclick="imgSlider('shoe1.png');changeCircleColor('#BDE3F2')"></li>
+            <li><img src="shoe2.png" onclick="imgSlider('shoe2.png');changeCircleColor('#D93636')"></li>
+            <li><img src="shoe3.png" onclick="imgSlider('shoe3.png');changeCircleColor('#D9D9D9')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.NikeShoe').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    </body>
+</html>
